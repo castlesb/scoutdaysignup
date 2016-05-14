@@ -1,0 +1,348 @@
+html
+  head
+    link(href='https://fonts.googleapis.com/css?family=Hind:400,300,500', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    style.
+      html{
+      margin: 0;
+      padding: 0;
+      font-family: 'Hind';
+      }
+      body{
+      margin: 0;
+      padding: 0;
+      }
+      section{
+      padding-bottom: 100px;
+      padding-top: 100px;
+      }
+      #menu{
+      width: 100%;
+      height: 50px;
+      background-color: #1784BD;
+      float: left;
+      }
+      #menuLogo{
+      margin-left: 24px;
+      height: 26px;
+      margin-top: 14px;
+      float: left;
+      }
+      #menuLogin{
+      height: 26px;
+      width: 80px;
+      background-color: #0D435F;
+      color: white;
+      font-weight: 400;
+      line-height: 26px;
+      font-size: 14px;
+      float: right;
+      margin-right: 24px;
+      margin-top: 12px;
+      border-radius: 4px;
+      text-align: center;
+      letter-spacing: 1.0;
+      cursor: pointer;
+      transition: background-color .2s;
+      }
+      #menuLogin:hover{
+      background-color: #072E42;
+      }
+      #landSection{
+      height: 680px;
+      width: 100%;
+      background: url(/img/landingpageBG.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding: 0;
+      }
+      h1{
+      font-size: 34px;
+      line-height: 52px;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 1;
+      font-family: 'Lato';
+      font-weight: 700;
+      }
+      h2{
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: normal;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      color: white;
+      width: intrinsic;
+      letter-spacing: 1;
+      color: #1784BD;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #1784BD;
+      }
+      .landTypeHeader{
+      height: 40px;
+      width: 80%;
+      border-radius: 5px;
+      background-color: white;
+      font-size: 20px;
+      color: #1784BD;
+      line-height: 40px;
+      margin-top: 50px;
+      text-align: center;
+      font-weight: 500;
+      margin-left: 0;
+      margin-bottom: 22px;
+      letter-spacing: 1;
+      }
+      .signUpText{
+      width: 80%;
+      height: 36px;
+      border-radius: 5px;
+      background-color: white;
+      font-size: 14px;
+      line-height: 14px;
+      padding: 11px;
+      margin-bottom: 18px;
+      margin-left: 0%;
+      position: relative;
+      display: block;
+      border: none;
+      outline: none;
+      }
+      .shiftRight{
+      margin-left: 20%;
+      }
+      .registerBTN{
+      background-color: #1784BD;
+      height: 30px;
+      width: 50%;
+      margin-left: 35%;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      color: white;
+      letter-spacing: 1.5;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer
+      }
+      #dividerLine{
+      width: 2px;
+      height: 210px;
+      background-color: rgba(255, 255, 255, .55);
+      margin: 0;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      #landpageh1{
+      margin-top: 100px;
+      }
+      #info p{
+      margin-top: 10px;
+      color: rgb(120, 120, 120);
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 300;
+      }
+      .infoSection{
+      padding-left: 30px;
+      padding-right: 30px;
+      }
+      #testimonials{
+      background-color: #F4F6F8;
+      }
+      #footer{
+      padding: 0;
+      color: white;
+      font-family: 12px;
+      text-align: center;
+      line-height: 80px;
+      background-color: #0D435F;
+      }
+      .testImg{
+      width: 60%;
+      margin-left: 20%;
+      }
+      .testImgMobile{
+      display: none;
+      }
+      .hola{
+      height: 100%;
+      float: left;
+      margin: 0;
+      width: 46%;
+      }
+      @media screen and (max-width: 992px){
+      h1{
+      font-size: 30px;
+      }
+      .signupText{
+      width: 90%;
+      margin-left: 5%;
+      }
+      .landTypeHeader{
+      width: 90%;
+      margin-left: 5%;
+      }
+      #landSection{
+      height: 680px;
+      width: 100%;
+      background: url(/img/landingpageBGMobile.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding: 0;
+      padding-bottom: 50px;
+      }
+      .testImg{
+      width: 90%;
+      margin-left: 5%;
+      display: block;
+      }
+      .testImgMobile{
+      display: none;
+      }
+      }
+      @media screen and (max-width: 768){
+      #topInfo{
+      border-bottom: 1px solid rgb(220, 220, 220);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      }
+      #info p{
+      text-align: center;
+      width: 96%;
+      margin-left: 2%;
+      }
+      h2{
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .testImgMobile{
+      display: block;
+      width: 100%;
+      margin-left: 0%;
+      margin-bottom: 70px;
+      }
+      .testImg{
+      display: none;
+      }
+      #testimonials{
+      padding-bottom: 0px;
+      padding-top: 75px;
+      }
+      .signupText{
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .landTypeHeader{
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      #dividerLineSecion{
+      display: none;
+      }
+      h1{
+      font-weight: 300;
+      }
+      .registerBTN{
+      width: 60%;
+      margin-left: 20%;
+      margin-bottom: 50px;
+      }
+      .hola{
+      width: 50%;
+      }
+      #dividerLineSection{
+      width: 0;
+      display: none;
+      }
+      .addLeft{
+      margin-left: 4%;
+      }
+      }
+      @media screen and (max-width: 580){
+      h1{
+      font-size: 28px;
+      line-height: 38px;
+      text-align: left;
+      }
+      }
+  body
+    #menu
+      img#menuLogo(src='/img/logo.png')
+      #menuLogin Login
+    section#landSection
+      .container
+        .row
+          .col-md-8.col-sm-12.col-md-offset-0.col-sm-offset-0
+            h1#landpageh1
+              | Get evaluated by professional scouts.
+              br
+              | Connect easier with college coaches.
+        .row
+          .col-md-6.col-md-offset-1.col-xs-offset-0.col-xs-12
+            .hola.addRight
+              #checkWidth.landTypeHeader.shiftRight Athletes
+              form(method='post', action='/athletes')
+                input.signUpText.shiftRight(type='text', name='name', placeholder='Full Name')
+                input.signUpText.shiftRight(type='text', name='email', placeholder='Email')
+                select.signUpText.shiftRight(name='year')
+                  option(value='gradYear') HS Graduation Year
+                  option(value='2016') 2016
+                  option(value='2017') 2017
+                  option(value='2018') 2018
+                  option(value='2019') 2019
+                  option(value='2020') 2020
+                  option(value='2021') 2021
+                  option(value='2022') 2022
+                  option(value='2023') 2023
+                button.registerBTN Register
+            #dividerLineSecion.hola(style='width: 8%;')
+              #dividerLine
+            .hola.addRight
+              .landTypeHeader.addLeft Coaches
+              form(method='post', action='/coaches')
+                input.signUpText.addLeft(type='text', name='name', placeholder='Full Name')
+                input.signUpText.addLeft(type='text', name='email', placeholder='Email')
+                input.signUpText.addLeft(type='text', name='school', placeholder='Where do you coach?')
+                button.registerBTN(style='margin-left: 15%') Register
+    section#info
+      .container
+        .row
+          #topInfo.col-md-5.col-md-offset-1.col-sm-6.col-sm-offset-0.col-xs-offset-1.col-xs-10.infoSection
+            h2 For Athletes
+            p
+              | Apply and submit your recruiting materials. Our staff of evaluators make decisions and if accepted you'll be granted access to network with college coaches nationwide.
+          .col-md-5.col-sm-6.col-sm-offset-0.col-xs-offset-1.col-xs-10.infoSection
+            h2 For Coaches
+            p
+              | We help simplify your hunt for talent. We engage you with top players and necessary tools to help you contact better players faster. Find the right fit for your program.
+    section#testimonials
+      .container
+        .row
+          .col-md-4.col-sm-4
+            img#testImg1.testImg(src='/img/player1test.png', style='margin-left: 35%')
+            img#testImg1Mobile.testImgMobile(src='/img/player1testMobile.png')
+          .col-md-4.col-sm-4
+            img#testImg2.testImg(src='/img/player2test.png')
+            img#testImg2Mobile.testImgMobile(src='/img/player2testMobile.png')
+          .col-md-4.col-sm-4
+            img#testImg3.testImg(src='/img/player3test.png', style='margin-left: 5%')
+            img#testImg3Mobile.testImgMobile(src='/img/player3testMobile.png')
+    section#footer
+      | ScoutDay 2016 All Rights Reserved
